@@ -1,0 +1,3 @@
+# Ignore files from Python installation and virtual environment 
+__pycache__/
+.venv/
