@@ -29,28 +29,28 @@ function App() {
       <>
         <h1>BCIS Course Planner</h1>
         <h2>2025 - Semester 1</h2>
-        {courses.year1_S1.map((item, index) => (
-          <p key={index}>{item}</p>
+        {courses.year1_S1.map((course, index) => (
+          <p key={index}>{course}</p>
         ))}
         <h2>2025 - Semester 2</h2>
-        {courses.year1_S2.map((item, index) => (
-          <p key={index}>{item}</p>
+        {courses.year1_S2.map((course, index) => (
+          <p key={index}>{course}</p>
         ))}
         <h2>2026 - Semester 1</h2>
-        {courses.year2_S1.map((item, index) => (
-          <p key={index}>{item}</p>
+        {courses.year2_S1.map((course, index) => (
+          <p key={index}>{course}</p>
         ))}
         <h2>2026 - Semester 2</h2>
-        {courses.year2_S2.map((item, index) => (
-          <p key={index}>{item}</p>
+        {courses.year2_S2.map((course, index) => (
+          <p key={index}>{course}</p>
         ))}
         <h2>2027 - Semester 1</h2>
-        {courses.year3_S1.map((item, index) => (
-          <p key={index}>{item}</p>
+        {courses.year3_S1.map((course, index) => (
+          <p key={index}>{course}</p>
         ))}
         <h2>2027 - Semester 2</h2>
-        {courses.year3_S2.map((item, index) => (
-          <p key={index}>{item}</p>
+        {courses.year3_S2.map((course, index) => (
+          <p key={index}>{course}</p>
         ))}
       </>
     );

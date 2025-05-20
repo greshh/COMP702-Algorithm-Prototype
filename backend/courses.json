@@ -1,0 +1,272 @@
+{
+        "COMP500": {
+          "title": "Programming Concepts and Techniques",
+          "prerequisites": [],
+          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "minors": []
+        },
+        "COMP501": {
+          "title": "Computing Technology in Society",
+          "prerequisites": [],
+          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "minors": []
+        },
+        "COMP507": {
+          "title": "IT Project Management",
+          "prerequisites": [],
+          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "minors": []
+        },
+        "COMP508": {
+          "title": "Database System Design",
+          "prerequisites": [],
+          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "minors": []
+        },
+        "DIGD507": {
+          "title": "Mahitahi | Collaborative Practices",
+          "prerequisites": [],
+          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "minors": []
+        },
+        "MATH503": {
+          "title": "Mathematics for Computing",
+          "prerequisites": [],
+          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "minors": []
+        },
+        "COMP702": {
+          "title": "Research and Development Project Part 1",
+          "prerequisites": [],
+          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "minors": []
+        },
+        "COMP703": {
+          "title": "Research and Development Project Part 1",
+          "prerequisites": [],
+          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "minors": []
+        },
+        "COMP504": {
+          "title": "Networks and Internet",
+          "prerequisites": [],
+          "majors": ["Networks and Cybersecurity"],
+          "minors": ["Networks and Cybersecurity"]
+        },
+        "COMP604": {
+          "title": "Operating Systems",
+          "prerequisites": ["COMP503", "COMP504"],
+          "majors": ["Networks and Cybersecurity", "Software Development"],
+          "minors": ["Networks and Cybersecurity", "Software Development"]
+        },
+        "COMP607": {
+          "title": "Information Security Technologies",
+          "prerequisites": ["COMP501"],
+          "majors": ["Networks and Cybersecurity", "Digital Services"],
+          "minors": ["Networks and Cybersecurity", "Digital Services"]
+        },
+        "COMP609": {
+          "title": "Network and System Administration",
+          "prerequisites": ["COMP504", "ENEL504"],
+          "majors": ["Networks and Cybersecurity"],
+          "minors": ["Networks and Cybersecurity"]
+        },
+        "ENEL611": {
+          "title": "Computer Network Applications",
+          "prerequisites": ["COMP504", "ENEL504"],
+          "majors": ["Networks and Cybersecurity"],
+          "minors": ["Networks and Cybersecurity"]
+        },
+        "COMP714": {
+          "title": "Advanced Network Technologies",
+          "prerequisites": ["COMP609"],
+          "majors": ["Networks and Cybersecurity"],
+          "minors": ["Networks and Cybersecurity"]
+        },
+        "COMP729": {
+          "title": "Enterprise Networks",
+          "prerequisites": ["COMP504", "ENEL504"],
+          "majors": ["Networks and Cybersecurity"],
+          "minors": ["Networks and Cybersecurity"]
+        },
+        "COMP715": {
+          "title": "Network Security",
+          "prerequisites": ["COMP609"],
+          "majors": ["Networks and Cybersecurity"],
+          "minors": ["Networks and Cybersecurity"]
+        },
+        "COMP716": {
+          "title": "Highly Secure Systems",
+          "prerequisites": ["COMP611", "ENGE501", "COMP610"],
+          "majors": ["Networks and Cybersecurity"],
+          "minors": ["Networks and Cybersecurity"]
+        },
+        "COMP718": {
+          "title": "Information Security Management",
+          "prerequisites": [],
+          "majors": ["Networks and Cybersecurity", "Digital Services"],
+          "minors": ["Networks and Cybersecurity", "Digital Services"]
+        },
+        "COMP503": {
+          "title": "Object Oriented Programming",
+          "prerequisites": [],
+          "majors": ["Software Development", "Computer Science"],
+          "minors": ["Software Development", "Computer Science"]
+        },
+        "COMP602": {
+          "title": "Software Development Practice",
+          "prerequisites": ["COMP603", "COMP610"],
+          "majors": ["Software Development"],
+          "minors": ["Software Development"]
+        },
+        "COMP603": {
+          "title": "Programme Design and Construction",
+          "prerequisites": ["COMP503", "COMP610", "ENSE502"],
+          "majors": ["Software Development", "Digital Services"],
+          "minors": ["Software Development", "Digital Services"]
+        },
+        "COMP611": {
+          "title": "Algorithm Design and Analysis",
+          "prerequisites": ["COMP610"],
+          "majors": ["Software Development", "Computer Science"],
+          "minors": ["Software Development", "Computer Science"]
+        },
+        "COMP610": {
+          "title": "Data Structures and Algorithms",
+          "prerequisites": ["COMP503", "ENSE502", "ENSE602"],
+          "majors": ["Software Development", "Data Science", "Computer Science"],
+          "minors": ["Software Development", "Data Science", "Computer Science", "Artificial Intelligence"]
+        },
+        "COMP721": {
+          "title": "Web Development",
+          "prerequisites": ["COMP603", "ENSE600"],
+          "majors": ["Software Development"],
+          "minors": ["Software Development"]
+        },
+        "COMP719": {
+          "title": "Applied Human Computer Interaction",
+          "prerequisites": [],
+          "majors": ["Software Development", "Computer Science"],
+          "minors": ["Software Development", "Computer Science"]
+        },
+        "ENSE701": {
+          "title": "Contemporary Issues in Software Engineering",
+          "prerequisites": ["COMP603", "COMP610", "ENSE600"],
+          "majors": ["Software Development"],
+          "minors": ["Software Development"]
+        },
+        "COMP517": {
+          "title": "Data Analysis",
+          "prerequisites": [],
+          "majors": ["Data Science"],
+          "minors": ["Data Science", "Artificial Intelligence"]
+        },
+        "COMP613": {
+          "title": "Combinatorics and Graph Theory",
+          "prerequisites": ["COMP500", "MATH503"],
+          "majors": ["Data Science", "Computer Science"],
+          "minors": ["Data Science", "Computer Science", "Artificial Intelligence"]
+        },
+        "COMP615": {
+          "title": "Foundations of Data Science",
+          "prerequisites": ["COMP517"],
+          "majors": ["Data Science"],
+          "minors": ["Data Science", "Artificial Intelligence"]
+        },
+        "COMP616": {
+          "title": "Statistics for Data Science",
+          "prerequisites": ["MATH503"],
+          "majors": ["Data Science"],
+          "minors": ["Data Science"]
+        },
+        "STAT603": {
+          "title": "Forecasting",
+          "prerequisites": ["MATH503"],
+          "majors": ["Data Science"],
+          "minors": ["Data Science"]
+        },
+        "COMP700": {
+          "title": "Text and Vision Intelligence",
+          "prerequisites": [],
+          "majors": ["Data Science"],
+          "minors": ["Data Science", "Artificial Intelligence"]
+        },
+        "COMP701": {
+          "title": "Nature Inspired Computing",
+          "prerequisites": [],
+          "majors": ["Data Science"],
+          "minors": ["Data Science", "Artificial Intelligence"]
+        },
+        "COMP717": {
+          "title": "Artificial Intelligence",
+          "prerequisites": ["COMP500"],
+          "majors": ["Data Science"],
+          "minors": ["Data Science", "Artificial Intelligence"]
+        },
+        "COMP723": {
+          "title": "Data Mining and Knowledge Engineering",
+          "prerequisites": [],
+          "majors": ["Data Science"],
+          "minors": ["Data Science"]
+        },
+        "INFS502": {
+          "title": "Digital Services in IT",
+          "prerequisites": [],
+          "majors": ["Digital Services"],
+          "minors": ["Digital Services"]
+        },
+        "INFS603": {
+          "title": "Needs Analysis, Acquisition and Training",
+          "prerequisites": [],
+          "majors": ["Digital Services"],
+          "minors": ["Digital Services"]
+        },
+        "INFS604": {
+          "title": "Service Modelling",
+          "prerequisites": [],
+          "majors": ["Digital Services"],
+          "minors": ["Digital Services"]
+        },
+        "INFS605": {
+          "title": "Microservices",
+          "prerequisites": [],
+          "majors": ["Digital Services"],
+          "minors": ["Digital Services"]
+        },
+        "COMP726": {
+          "title": "Blockchains and Cryptocurrency Technology",
+          "prerequisites": [],
+          "majors": ["Digital Services"],
+          "minors": ["Digital Services"]
+        },
+        "COMP728": {
+          "title": "Internet of Things and Applications",
+          "prerequisites": [],
+          "majors": ["Digital Services"],
+          "minors": ["Digital Services"]
+        },
+        "INFS704": {
+          "title": "Service Innovation and Design",
+          "prerequisites": [],
+          "majors": ["Digital Services"],
+          "minors": ["Digital Services"]
+        },
+        "COMP612": {
+          "title": "Computer Graphics Programming",
+          "prerequisites": ["MATH503", "COMP603", "COMP610"],
+          "majors": ["Computer Science"],
+          "minors": ["Computer Science"]
+        },
+        "COMP711": {
+          "title": "Theory of Computation",
+          "prerequisites": ["COMP610", "COMP613"],
+          "majors": ["Computer Science"],
+          "minors": ["Computer Science"]
+        },
+        "COMP712": {
+          "title": "Programming Languages",
+          "prerequisites": ["COMP603", "COMP610"],
+          "majors": ["Computer Science"],
+          "minors": ["Computer Science"]
+        }
+}
