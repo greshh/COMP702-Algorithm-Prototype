@@ -19,17 +19,24 @@ def get_course_data():
 
 @app.route("/data")
 def generate_recommendations():
+    # Get info from external input.
     student_info = get_student_info()
     courses = get_course_data()
 
+    # Initialise Z3 solver.
     solver = Solver()
-    course_taken = {c: Bool(c) for c in courses} # If true, the course has already been taken.
 
+    course_taken = {c: Bool(c) for c in courses} # If true, the course has already been taken.'
+
+    # Initialise array for semester taken per course.
+    # Y1 S1 = 0, Y1 S2 = 1, Y2, S1 = 3 and so on...
     semester_taken = {c: Int(f"semester_{c}") for c in courses } # The semester that course will be taken.
-    for c in courses:
+
+    # Initialise semester taken to be -1 (not taken).
+    for c in courses: 
         solver.add(Or(
-            semester_taken[c] == -1,  # not taken
-            And(semester_taken[c] >= 0, semester_taken[c] < 6)
+            semester_taken[c] == -1,
+            And (semester_taken[c] >= 0, semester_taken[c] < 6)
         ))
 
     # Constraint: The prerequisite must be taken before the course.
@@ -50,6 +57,7 @@ def generate_recommendations():
             solver.add(course_taken[c] == True)
 
     # Categorize courses
+    compulsory_courses = [c for c, data in courses.items() if "Compulsory" in data.get("majors", [])]
     major1_courses = [c for c, data in courses.items() if student_info["firstMajor"] in data.get("majors", [])]
     major2_courses = [c for c, data in courses.items() if student_info["secondMajor"] in data.get("majors", [])]
     minor1_courses = [c for c, data in courses.items() if student_info["firstMinor"] in data.get("minors", [])]
@@ -64,6 +72,7 @@ def generate_recommendations():
     # ] 
 
     # Degree requirements
+    solver.add(Sum([If(course_taken[c], 1, 0) for c in compulsory_courses]) == 8)
     if type == "doubleMajor":
         solver.add(Sum([If(course_taken[c], 1, 0) for c in major1_courses]) == 8)
         solver.add(Sum([If(course_taken[c], 1, 0) for c in major2_courses]) == 8)
@@ -129,7 +138,7 @@ def generate_recommendations():
         # solver.add(Sum([If(course_taken[c], 1, 0) for c in elective_courses]) >= 4)
 
     # Total course count constraint - excluding electives
-    solver.add(Sum([If(course_taken[c], 1, 0) for c in courses]) <= 20)
+    solver.add(Sum([If(course_taken[c], 1, 0) for c in courses]) <= 24)
 
     # Create eligible courses then sort by semester
     # eligible_courses = [
@@ -142,14 +151,26 @@ def generate_recommendations():
     # Generate recommendations
     recommendations = []
     for c in courses:
-        if c not in student_info["taken"] and c in (major1_courses or major2_courses or minor1_courses or minor2_courses):
+        if c not in student_info["taken"] and (c in compulsory_courses or c in major1_courses or c in major2_courses or c in minor1_courses or c in minor2_courses):
             test_solver = Solver()
             test_solver.add(solver.assertions())
             test_solver.add(course_taken[c] == True)
             if test_solver.check() == sat:
+                courseType = "";
+                if (c in compulsory_courses):
+                    courseType = "compulsory"
+                elif (c in major1_courses):
+                    courseType = "major1"
+                elif (c in major2_courses): 
+                    courseType = "major2" 
+                elif (c in minor1_courses):
+                    courseType = "minor1" 
+                elif (c in minor2_courses): 
+                    courseType = "minor2"
                 recommendations.append({
                     "code": c,
-                    "title": courses[c]["title"]
+                    "title": courses[c]["title"],
+                    "type": courseType
                 })
 
     return recommendations

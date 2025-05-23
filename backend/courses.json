@@ -3,56 +3,56 @@
           "title": "Programming Concepts and Techniques",
           "prerequisites": [],
           "level": 5,
-          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "majors": ["Compulsory"],
           "minors": []
         },
         "COMP501": {
           "title": "Computing Technology in Society",
           "prerequisites": [],
           "level": 5,
-          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "majors": ["Compulsory"],
           "minors": []
         },
         "COMP507": {
           "title": "IT Project Management",
           "prerequisites": [],
           "level": 5,
-          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "majors": ["Compulsory"],
           "minors": []
         },
         "COMP508": {
           "title": "Database System Design",
           "prerequisites": [],
           "level": 5,
-          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "majors": ["Compulsory"],
           "minors": []
         },
         "DIGD507": {
           "title": "Mahitahi | Collaborative Practices",
           "prerequisites": [],
           "level": 5,
-          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "majors": ["Compulsory"],
           "minors": []
         },
         "MATH503": {
           "title": "Mathematics for Computing",
           "prerequisites": [],
           "level": 5,
-          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "majors": ["Compulsory"],
           "minors": []
         },
         "COMP702": {
           "title": "Research and Development Project Part 1",
           "prerequisites": [],
           "level": 7,
-          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "majors": ["Compulsory"],
           "minors": []
         },
         "COMP703": {
           "title": "Research and Development Project Part 2",
           "prerequisites": [],
           "level": 7,
-          "majors": ["Computer Science", "Networks and Cybersecurity", "Data Science", "Software Development", "Digital Services"],
+          "majors": ["Compulsory"],
           "minors": []
         },
         "COMP504": {
